@@ -1,0 +1,32 @@
+div{
+    display: inline-block;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: 50px 5px;
+    animation: translation 5s linear infinite;
+}
+.d2{
+    animation: translation 5s linear infinite;
+}
+
+@keyframes translation {
+    
+    0%{
+        transform: perspective(100px) rotate3d(1,1,1,0deg);
+    }
+    50%{
+        transform: perspective(100px) rotate3d(1,1,1,180deg);
+    }
+    100%{
+        transform: perspective(100px) rotate3d(1,1,1,360deg);
+    }
+}
+
+
+@media screen and (max-width:780px) {
+    body{
+        background-color: red;
+    }
+    
+}

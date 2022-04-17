@@ -1,0 +1,226 @@
+body{
+    scroll-behavior: smooth;
+}
+
+.second p{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-variant: small-caps;
+    border-bottom: 3px solid blue;
+    border-top: 3px solid red;
+    
+}
+.premier{
+    
+    background-color: brown;
+    height: 100px;
+    padding: 20px;
+}
+
+
+.Box{
+    
+     background-color: aqua;
+     width: 80%;
+}
+.Box .p1{
+    color: darkorange;
+    width: 100%;
+    background-color: blue;
+}
+
+:root{
+    ---pengouin : blue ;
+   ---taille: 30px/10px small-caps bolder verdana
+}
+
+h1{
+    color: var(---pengouin);
+    font: var(---taille);
+    border:1px solid black;
+    border-radius: 400px/100px;
+
+}
+
+
+.block{
+    display: list-item;
+    
+    background-color: crimson;
+    width: 100%;
+    height: 100px;
+}
+
+
+.relative{
+    position: relative;
+    
+    left: 50px;
+z-index: 2000;
+}
+.static{
+    z-index: 1000;
+}
+
+.absolute{
+    position: absolute;
+    top: 20px;
+}
+
+.fixed{
+    position: fixed;
+    left: 0;
+    
+}
+
+
+h3{
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: sticky;
+    top: 200px;
+    
+}
+
+table{
+    border-collapse: collapse;
+    width: 500px;
+    height: 100px;
+    empty-cells:hide;
+    caption-side: bottom;
+    vertical-align: top;
+}
+
+tr,td{
+border: 1px solid black;
+
+}
+
+.info{
+    background-color: blue;
+    
+}
+caption{
+    
+margin-top: 20px;    
+
+}
+
+figcaption{
+    font-size: 2rem;
+}
+h1{
+    z-index: 2;
+    background-color: blue;
+}
+video{
+    width: 100%;
+    
+}
+
+.imagess{
+    width: 100%;
+    height: 1000px;
+    background-image: url("az.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    object-fit: cover;
+    background-clip: border-box;
+    background-origin: content-box;
+}
+
+.degrade{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+  box-shadow:   20px 20px 40px rgb(170, 21, 21);
+}
+
+a:link{
+ color: green;   
+}
+
+a:visited{
+    color: gray;
+}
+
+a:hover{
+    color: brown;
+}
+
+
+p::first-letter{
+    font-size: 40px;
+}
+
+div::before{
+    content: "";
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+}
+
+.champ{
+    margin-bottom: 30px;
+}
+
+#transitions{
+    background-color: blue;
+    width: 50%;
+    transition-property: width,background-color;
+    transition-duration:10s ;
+
+}
+
+#transitions:hover{
+    background: orange;
+    width: 100%;
+}
+
+#lien{
+    color: black;
+    text-decoration: none;
+  transition: all 3s ease-in-out 2s ;
+
+}
+#lien:hover{
+border-bottom: 1px solid burlywood;
+color: orange;
+}
+
+.animation{
+    animation: anim 5s ease-in-out 0s 3 reverse forwards
+
+}
+
+@keyframes anim {
+    
+    0%{
+        width: 100px;
+        color: blue;
+    }
+    50%{
+        width: 200px;
+        color: red;
+    }
+    100%{
+        width: 400px;
+        color: yellowgreen;
+    }
+}
+
+.transform{
+    width: 400px;
+    height: 200px;
+    background-color: blueviolet;
+    transform: rotate(300deg);
+
+
+}
+.transform p{
+     
+    transform: scale();
+}
